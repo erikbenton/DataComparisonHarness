@@ -2,10 +2,14 @@
 
 public class BasicTextLogger<T>(T configuration) : ILogger where T : BaseConfiguration
 {
+    private bool logFilePrepared = false;
     public T Configuration { get; set; } = configuration;
 
     public string Log(string message, LogLevel level)
     {
+        if (!logFilePrepared)
+            PrepareLogFile();
+
         var levelMessage = GetLogLevelMessage(level);
 
         var logMessage = $"{DateTime.Now:yyyy-MM-dd--HH-mm-ss} {levelMessage}: {message}";
@@ -32,6 +36,8 @@ public class BasicTextLogger<T>(T configuration) : ILogger where T : BaseConfigu
             }
             File.Move(Configuration.LogFile, newFileName);
         }
+
+        logFilePrepared = true;
     }
 
     private string GetLogLevelMessage(LogLevel level)

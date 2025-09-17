@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataComparisonHarness.Core", "DataComparisonHarness.Core\DataComparisonHarness.Core.csproj", "{FD4E0E4E-78DE-4CCF-87C1-05E1CCDEED57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataComparisonHarness.Tests", "DataComparisonHarness.Tests\DataComparisonHarness.Tests.csproj", "{CBAD1334-7856-4F29-BCFB-B270972ECFD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FD4E0E4E-78DE-4CCF-87C1-05E1CCDEED57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD4E0E4E-78DE-4CCF-87C1-05E1CCDEED57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD4E0E4E-78DE-4CCF-87C1-05E1CCDEED57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAD1334-7856-4F29-BCFB-B270972ECFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAD1334-7856-4F29-BCFB-B270972ECFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAD1334-7856-4F29-BCFB-B270972ECFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAD1334-7856-4F29-BCFB-B270972ECFD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
